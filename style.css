@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Poppins, sans-serif;
+  height: 100vh;
+}
+
+.header{
+  background-color: rgb(152, 226, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 12rem;
+  gap: 25px;
+}
+.header p{
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 10px;
+}
+.header .input-container{
+  background-color: #fff;
+  padding-inline: 16px;
+  width: 300px;
+  height: 48px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:12px
+}
+.header .input-container button{
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  transition: color 0.3s ease; 
+}
+.header .input-container button:hover{
+  color: #000;
+}
+.header .input-container input{
+  font-size: 18px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+.container-tasks{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.16 );
+  width: 90vw;
+  margin-left: 5vw;
+  padding: 48px 24px;
+}
+/* todo display */
+.container-tasks .tasks{
+  border: 1px solid #000;
+  padding-inline: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  margin-bottom: 10px;
+
+}
+.container-tasks .tasks .btn-delete{
+  height: 100%;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: gray;
+  transition: color 0.3s ease;
+}
+.container-tasks .tasks .btn-delete:hover{
+  color: #000;
+}
